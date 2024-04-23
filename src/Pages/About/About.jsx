@@ -83,17 +83,12 @@ const PuestosFundador = styled.span`
 const About = () => {
 
     useEffect(() => {
-        document.title = "GeekStore | Sobre";
-    }, [])
+        document.title = "Library | Sobre";
+    }, []);
 
     return(
         <SobreDiv>
-            <Titulo>¿Quiénes somos?</Titulo>
-            <Parrafos>Somos una subdivisión de "LTech" encargada de proveer los mejores productos tecnológcos (equipos de cómputo, computadoras gamer, consolas de videojuegos, videojuegos) 
-                y figuras de colección de la más alta calidad a los mejores precios para que salga el geek que llevas dentro.
-            </Parrafos>
-
-            <Titulo>Nuestro fundador</Titulo>
+            <Titulo>Diseñador</Titulo>
             <FundadorDiv>
                 <FotoDiv>
                 <FotoFundador src={Luis} />

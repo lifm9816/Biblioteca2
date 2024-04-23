@@ -42,7 +42,7 @@ const Search = (props) => {
     const [filteredProducts, setFilteredProducts] = useState([]);
 
     useEffect(() => {
-        document.title = "GeekStore | Búsqueda";
+        document.title = "Library | Búsqueda";
 
         const filtered = products.filter((product) => 
                 product.title.toLowerCase().startsWith(searchTerm.toLowerCase())

@@ -84,7 +84,7 @@ const Login = ({ users, handleUserLogin }) =>{
     const [password, setPassword] = useState('');
 
     useEffect(() => {
-        document.title = "GeekStore | Iniciar Sesión";
+        document.title = "Library | Iniciar Sesión";
     }, []);
 
     const handleLogin = (e) => {

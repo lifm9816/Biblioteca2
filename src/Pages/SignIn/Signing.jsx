@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import { btnSignIn, colorPrimario } from "../../Components/UI/Variables";
 import { Formulario, Btn, Contenedor, Etiqueta, CampoTexto} from "../../Components/UI";
-import def_user from "../../assets/Images/def-user.png"
-import portada from "../../assets/Images/portada_miles.jpeg"
+import def_user from "../../assets/Images/usu.png"
+import portada from "../../assets/Images/5.png"
 import { validateName, validateLastName, validateEmail, validatePhone, ValidatePassword, confirmPassword } from "../../Validations/Validations";
 import { v4 as uuid } from "uuid"
 import { useNavigate } from "react-router-dom";
@@ -156,7 +156,7 @@ const SignIn = (props) => {
     const history = useNavigate();
 
     useEffect(() => {
-        document.title = "GeekStore | Crear Cuenta";
+        document.title = "Library | Crear Cuenta";
     }, []);
 
     const [selectedImage, setSelectedImage] = useState(null);
@@ -330,6 +330,23 @@ const SignIn = (props) => {
                         </CropContainer>
                         ) : null}
                         </InputFoto>
+                </DivFoto>
+                <DivFoto>
+                <Etiqueta htmlFor="nombre">Matrícula: </Etiqueta> 
+                    <CampoTexto 
+                            id="nombre" 
+                            type="text" 
+                            placeholder="Ingrese su matricula" 
+                            error = {errorName && errorName.name && errorName.name.error}
+                            value = {name}
+                            onChange = {(e) => {
+                                setName(e.target.value);
+                            }}
+                            onBlur = { (e) => {
+                                setErrorName(validateName(e.target.value));
+                            }}
+                            required
+                        />
                 </DivFoto>
 
                 <Div>

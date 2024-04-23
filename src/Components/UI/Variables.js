@@ -1,5 +1,5 @@
-export const colorPrimario = "#014351";
-export const colorSecundario = "#E4A555";
+export const colorPrimario = "#262825";
+export const colorSecundario = "#94d32e";
 
 export const fondoClaro = "#FDF0C9"
 export const cardClara = "white";

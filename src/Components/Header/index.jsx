@@ -34,6 +34,7 @@ const StyledHeader = styled.nav`
 
 const Logo = styled.img`
 box-sizing: border-box;
+border-radius: 100%;
 
 @media (max-width: 800px)
 {

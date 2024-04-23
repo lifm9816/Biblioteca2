@@ -179,24 +179,26 @@ function App() {
     {
       id: uuid(),
       photo: Luis,
+      matricula: "231803302",
       name: "Luis",
       lastName: "Martínez",
       email: "lifm1698@outlook.com",
       phone: "222 526 5031",
       password: "123456789",
       role: "cliente",
-      font: portada
+      font: fondo_mat
     },
     {
       id: uuid(),
       photo: Amy,
+      matricula: "231803302",
       name: "Amy",
       lastName: "Martínez",
       email: "lifm98@outlook.com",
       phone: "222 526 5031",
       password: "123456789",
       role: "administrador",
-      font: portada
+      font: fondo_ingenieria
     }
   ])
 

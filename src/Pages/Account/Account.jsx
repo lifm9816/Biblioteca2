@@ -160,7 +160,7 @@ const Account = (props) => {
     const history = useNavigate();
 
     useEffect(() => {
-        document.title = "GeekStore | Mi cuenta";
+        document.title = "Library | Mi cuenta";
 
         // Verificar si hay un usuario conectado al cargar la página
         const isLoggedInStorage = localStorage.getItem("isLoggedIn");

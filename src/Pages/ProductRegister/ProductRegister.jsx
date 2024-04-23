@@ -120,7 +120,7 @@ const ProductRegister = ({ brands, products, updateProducts, isLoggedIn, userRol
     
 
     useEffect(() => {
-        document.title = "GeekStore | Registrar Producto";
+        document.title = "Library | Registrar Libro";
 
         if (!isLoggedIn || userRole !== "administrador") {
             // Si el usuario no tiene acceso, redirigir a otra página (por ejemplo, la página de inicio)
@@ -361,26 +361,6 @@ const ProductRegister = ({ brands, products, updateProducts, isLoggedIn, userRol
                     />
                     {errorStock.stock.error && (
                         <ErrorMessage> {errorStock.stock.message} </ErrorMessage>
-                    )}
-                </Div>
-                
-                <Div>
-                    <Etiqueta htmlFor="price" >Precio: </Etiqueta>
-                    <CampoTexto 
-                        id = "price"
-                        type = "text"
-                        error = {errorPrice && errorPrice.price && errorPrice.price.error}
-                        value={`$ ${price.toFixed(2)}`}//Se formatea price como string con para que incluya el signo de $ y los 0's indicados
-                        onChange={ (e) => {
-                            formatPrice(e);
-                        }}
-                        onBlur = { (e) => {
-                            setErrorPrice(validatePrice(formatPrice(e)));
-                        }}
-                        required
-                    />
-                    {errorPrice.price.error && (
-                        <ErrorMessage> {errorPrice.price.message} </ErrorMessage>
                     )}
                 </Div>
 
