@@ -1,0 +1,27 @@
+.icon {
+    position: relative;
+  }
+  
+  .cart-counter {
+    width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 13px;
+  right: -11px;
+  background-color: #FDF0C9;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 0.8rem;
+  color: #014351;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Ajusta el espacio vertical del texto */
+  text-align: center; /* Centra el texto horizontalmente */
+  }
+
+  @media screen and (min-width: 1001px){
+    .cart-counter{
+      top:22px;
+    }
+  }
